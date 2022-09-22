@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Food Delivery',
       debugShowCheckedModeBanner: false,
-      home: HomeScreenTest(),
+      home: HomeScreen(),
     );
   }
 }

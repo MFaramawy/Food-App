@@ -8,14 +8,14 @@ import 'package:food_delivery/core/utils/assets_manager.dart';
 
 int tIndex = 0;
 
-class HomeScreenTest extends StatefulWidget {
-  const HomeScreenTest({Key? key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreenTest> createState() => _HomeScreenTestState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenTestState extends State<HomeScreenTest> {
+class _HomeScreenState extends State<HomeScreen> {
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
