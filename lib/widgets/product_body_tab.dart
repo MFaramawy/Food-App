@@ -32,7 +32,6 @@ class ProductBodyTab extends StatelessWidget {
           image: data[index].image,
           title: data[index].title,
           subTitle: data[index].subTitle,
-          onPressedFavorite: () {},
         ),
       ),
     );

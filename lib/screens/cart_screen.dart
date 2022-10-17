@@ -189,8 +189,8 @@ class _CartScreenState extends State<CartScreen> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(36),
                           ),
+                          backgroundColor: AppColors.primary,
                           fixedSize: const Size(200, 60),
-                          primary: AppColors.primary,
                         ),
                         child: Text(
                           'Check Out',

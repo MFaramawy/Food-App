@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
 
-class ProductItem extends StatelessWidget {
+class ProductItem extends StatefulWidget {
   const ProductItem({
     Key? key,
     required this.price,
     required this.image,
     required this.title,
     required this.subTitle,
-    this.onPressedFavorite,
   }) : super(key: key);
 
   final String price;
   final String image;
   final String title;
   final String subTitle;
-  final void Function()? onPressedFavorite;
 
+  @override
+  State<ProductItem> createState() => _ProductItemState();
+}
+
+class _ProductItemState extends State<ProductItem> {
+  bool isFavorite = false;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -35,11 +39,11 @@ class ProductItem extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                title,
+                widget.title,
                 style: const TextStyle(fontWeight: FontWeight.w600),
               ),
               Text(
-                subTitle,
+                widget.subTitle,
                 style: const TextStyle(
                   fontSize: 12,
                   color: Colors.grey,
@@ -50,14 +54,18 @@ class ProductItem extends StatelessWidget {
                 children: [
                   const SizedBox(width: 10),
                   Text(
-                    '\$$price',
+                    '\$${widget.price}',
                     style: const TextStyle(
                         fontSize: 16, fontWeight: FontWeight.w600),
                   ),
                   const Spacer(),
                   IconButton(
-                    onPressed: onPressedFavorite,
-                    icon: const Icon(Icons.favorite_border, size: 28),
+                    onPressed: () => setState(() => isFavorite = !isFavorite),
+                    icon: Icon(
+                      isFavorite ? Icons.favorite : Icons.favorite_border,
+                      size: 28,
+                      color: isFavorite ? Colors.red : null,
+                    ),
                   ),
                   const SizedBox(width: 10),
                 ],
@@ -70,7 +78,8 @@ class ProductItem extends StatelessWidget {
           height: 140,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            image: DecorationImage(fit: BoxFit.fill, image: AssetImage(image)),
+            image: DecorationImage(
+                fit: BoxFit.fill, image: AssetImage(widget.image)),
           ),
         ),
       ],
