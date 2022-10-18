@@ -1,16 +1,23 @@
-# food_delivery
+# Food App
 
-A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+# Screens
 
-A few resources to get you started if this is your first Flutter project:
+<p>
+<img alt="Night Coding" width="330" src="https://github.com/MFaramawy/Food-App-Private/blob/master/assets/layout/Home.png" align="center"/>
+<img alt="Night Coding" width="330" src="https://github.com/MFaramawy/Food-App-Private/blob/master/assets/layout/Details.png" align="center"/>
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<p>
+<img alt="Night Coding" width="330" src="https://github.com/MFaramawy/Food-App-Private/blob/master/assets/layout/Cart.png" align="center"/>
+<img alt="Night Coding" width="330" src="https://github.com/MFaramawy/Food-App-Private/blob/master/assets/layout/Cart_Remove.png" align="center"/>
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Video
+<p>
+
+
+https://user-images.githubusercontent.com/90357198/196309736-cc5a72d5-614c-4a72-9421-2f42368fab12.mp4
+</p>
